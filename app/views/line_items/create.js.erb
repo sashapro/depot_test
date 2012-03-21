@@ -1,0 +1,13 @@
+/**
+ * Created by JetBrains RubyMine.
+ * User: ss
+ * Date: 21.03.12
+ * Time: 17:36
+ * To change this template use File | Settings | File Templates.
+ */
+if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
+
+$('#cart').html("<%=j render @cart %>");
+
+$('#current_item').css({'background-color':'#88ff88'}).
+animate({'background-color':'#114411'}, 1000);
